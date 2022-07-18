@@ -9,7 +9,7 @@ import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
  * @author Doggo
  */
 contract GiveawayDraw is VRFConsumerBaseV2, Ownable {
-	error InvalidInputs();
+    error InvalidInputs();
     error IndexAlreadyUsed();
     error InvalidIndex();
     error NotDrawn();
