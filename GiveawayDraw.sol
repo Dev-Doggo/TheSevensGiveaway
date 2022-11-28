@@ -20,6 +20,7 @@ contract GiveawayDraw is VRFConsumerBaseV2, Ownable {
     struct GiveawayBucket {
         // The winner and the winning amount
         address winner;
+        // The timestamp where the randomness was fulfilled and the winner was picked
         uint96 drawTimestamp;
 
         // Both indexes are inclusive
@@ -27,7 +28,6 @@ contract GiveawayDraw is VRFConsumerBaseV2, Ownable {
         uint80 maxIndex;
         uint88 amount;
 
-        // The timestamp where the randomness was fulfilled and the winner was picked
         bool claimed;
 
         uint256 requestId;
